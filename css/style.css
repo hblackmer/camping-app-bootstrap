@@ -14,11 +14,6 @@ header h2 {
     color: #CEC8FF;
 }
 
-.site-footer{
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
-}
-
 .jumbotron {
     padding: 30px;
     margin: 0;
@@ -37,6 +32,14 @@ header h2 {
     min-height: 200px;
 }
 
+/* Carousel CSS */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    border: solid #5637DD;
+}
+
 /* Remove Blue and Underline Styling on Accordian Interface for Community Partners Section */
 a, a:hover {
     color: inherit;
@@ -50,3 +53,8 @@ a, a:hover {
     padding: 10px;
 }
 */
+
+.site-footer{
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
