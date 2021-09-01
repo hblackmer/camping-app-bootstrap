@@ -1,9 +1,14 @@
+* {
+    border-radius: 0 !important;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #413333;
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: 'Inter', sans-serif;
 }
 
 h2 {
@@ -21,9 +26,64 @@ header h2 {
     color: white;
 }
 
+/* Header CSS */
+#showcase {
+    height: 100vh;
+    background: url("../img/camping-view.jpg") bottom center / cover no-repeat;
+    position: relative;
+}
+#header {
+    z-index: 2;
+}
+#overlay {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Colors */
+.dark-brown {
+    color: #140d07;
+}
+.dark-brown-bg {
+    background-color: #140d07;
+}
+.medium-brown {
+    color: #987554;
+}
+.medium-brown-bg {
+    background-color: #987554;
+}
+.light-brown {
+    color: #ada49c;
+}
+.nucamp-pink {
+    color: #ac44a4;
+}
+.nucamp-blue {
+    color: #0a9cdc;
+}
+.btn-primary {
+    background: #987554;
+    color: #140d07;
+    border-color: #140d07;
+}
+.btn-primary:hover {
+    background: #ada49c;
+    color: #140d07;
+    border-color: #140d07;
+}
+.border-darkbrown {
+    border: 3px solid #140d07;  
+}
+
 /* Navigation Bar */
 .navbar {
-    background-color: #901CAD;
+    background-color: #413333;
 }
 
 .row-content {
@@ -37,7 +97,7 @@ header h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel {
-    border: solid #5637DD;
+    border: solid #140d07;
 }
 
 /* Remove Blue and Underline Styling on Accordian Interface for Community Partners Section */
@@ -55,6 +115,6 @@ a, a:hover {
 */
 
 .site-footer{
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#987554, #C39B77);
     padding: 20px 0;
 }

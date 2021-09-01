@@ -10,7 +10,7 @@
     <!-- Google Font CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -24,25 +24,6 @@
 </head>
 
 <body>
-    <!-- NuCamp Header -->
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
-                </div>
-                <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
-                </div>
-                <!-- Anchor to Reservation Form -->
-                <div class="col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- NuCamp Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -67,6 +48,17 @@
             </div>
         </div>
     </nav>
+
+    <!-- NuCamp Header -->
+    <section id="showcase" class="d-flex justify-content-center align-items-center mt-n5">
+        <div id="overlay"></div>
+        <div id="header" class="container text-white text-center">
+            <img src="img/logo.png" class="img-fluid" />
+            <h1 class="display-1 mb-0 nucamp-blue">NuCamp</h1>
+            <p class="lead d-none d-md-block nucamp-pink"><strong>a better way to camp</strong></p>
+            <a href="#reserveForm" role="button" class="btn btn-md btn-primary text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+        </div>
+    </section>
 
     <!-- Login Modal -->
     <div id="loginModal" class="modal fade" role="dialog">
@@ -154,14 +146,14 @@
         <!-- Section 1 of 3: Discover & Review -->
         <div class="row row-content align-items-center">
             <div class="col order-sm-last col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
+                <h2 class="text-sm-right nucamp-blue">Discover & Review</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img class="d-flex mr-3 border-darkbrown" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <h3 class="nucamp-pink">Our Campsites</h3>
+                        <p class="d-none d-sm-block light-brown">Explore our growing database of curated campsites and leave your own reviews!</p>
                     </div>
                 </div>
             </div>
@@ -169,29 +161,29 @@
         <!-- Section 2 of 3: Featured Campsites -->
         <div class="row row-content align-items-center">
             <div class="col col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+                <h2 class="nucamp-blue">Featured Campsites</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <div class="media-body align-self-center">
-                        <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        <h3 class="nucamp-pink">React Lake Campground</h3>
+                        <p class="d-none d-sm-block light-brown">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                    <img class="d-flex ml-3 border-darkbrown" src="img/react-lake-thumb.jpg" alt="React Lake" />
                 </div>
             </div>
         </div>
         <!-- Section 3 of 3: Our Community Partners -->
         <div class="row row-content align-items-center">
             <div class="col order-sm-last col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+                <h2 class="text-sm-right nucamp-blue">Our Community Partners</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <img class="d-flex mr-3" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <h3 class="nucamp-pink">Bootstrap Outfitters</h3>
+        				<p class="d-none d-sm-block light-brown">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
@@ -200,8 +192,8 @@
         <!-- NuCamp Reservation Form -->
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">
+                <div class="card border-darkbrown">
+                    <h3 class="card-header medium-brown-bg dark-brown">
                         Reserve a Campsite
                     </h3>
                     <div class="card-body">
@@ -231,7 +223,7 @@
                             <!-- Submit Input -->
                             <div class="row form-group">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary">Search</button>
+                                    <button type="submit" class="btn btn-primary text-white">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -247,17 +239,17 @@
             <div class="row">
                 <!-- Navigation Anchors -->
                 <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
+                    <h5 class="dark-brown">Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="aboutus.html" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Sites</a></li>
+                        <li><a href="contactus.html" class="text-white">Contact</a></li>
                     </ul>
                 </div>
                 <!-- Social Media Anchors -->
                 <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
+                    <h5 class="dark-brown">Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
@@ -265,8 +257,9 @@
                 </div>
                 <!-- Contact Anchors -->
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <h5 class="dark-brown">Contact</h5>
+                    <a role="button" class="btn btn-link text-white" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link text-white" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
             </div>
         </div>
