@@ -53,13 +53,22 @@ header h2 {
     background-color: #140d07;
 }
 .medium-brown {
-    color: #987554;
+    color: #413333;
 }
 .medium-brown-bg {
-    background-color: #987554;
+    background-color: #413333;
 }
 .light-brown {
     color: #ada49c;
+}
+.light-brown-bg {
+    background-color: #987554;
+}
+.extra-light-brown {
+    color: #c6a785;
+}
+.extra-light-brown-bg {
+    background-color: #c6a785;
 }
 .nucamp-pink {
     color: #ac44a4;
@@ -83,7 +92,7 @@ header h2 {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #413333;
+    background-color: #140d07;
 }
 
 .row-content {
@@ -94,7 +103,7 @@ header h2 {
 
 /* Carousel CSS */
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 .carousel {
     border: solid #140d07;
@@ -115,6 +124,6 @@ a, a:hover {
 */
 
 .site-footer{
-    background-image: linear-gradient(#987554, #C39B77);
+    background-image: linear-gradient(#413333, #987554);
     padding: 20px 0;
 }
