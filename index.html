@@ -84,17 +84,23 @@
                                         placeholder="mm/dd/yyyy" />
                                 </div>
                             </div>
-                            <!-- Cancel and Submit Button -->
-                            <!--<div class="row form-group">
-                                <div class="col">
-                                    <button type="submit" class="btn btn-primary">Search</button>
+                            <!-- Tent/RV Input -->
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label">Campsite Type</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="siteType" id="siteTent" autocomplete="off" value="Tent" checked> Tent
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="siteType" id="siteRV" autocomplete="off" value="RV"> RV
+                                    </label>
                                 </div>
-                            </div>-->
+                            </div>
+                            <!-- Cancel and Submit Button -->
                             <div class="row form-group">
                                 <div class="col">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Cancel</button>
-                                     <button type="submit" class="btn btn-primary">Search</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
